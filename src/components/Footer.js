@@ -40,13 +40,13 @@ const Footer = () => {
           </div>
           <div className="col item footer-social">
             <a href="https://www.facebook.com/avinash.mg.313/">
-              <img src={facebook} />
+              <img src={facebook} alt="facebook" />
             </a>
             <a href="https://api.whatsapp.com/send?phone=918714335607">
-              <img src={whatsapp} />
+              <img src={whatsapp} alt="whatsapp" />
             </a>
             <a href="https://github.com/avinashmg">
-              <img src={github} />
+              <img src={github} alt="github" />
             </a>
           </div>
         </div>
