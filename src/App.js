@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "ionicons/dist/ionicons/ionicons";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
+import Lightbox from "./components/Lightbox";
+import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
+import VideoPlayer from "./components/Video";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Slider />
+      <div style={{ background: "red", height: "5px" }}></div>
+      <AboutMe />
+      <div style={{ background: "red", height: "5px" }}></div>
+      <Lightbox />
+      <VideoPlayer url="http://youtube.com/embed/m00JN6P2X6M" />
+      <Footer />
     </div>
   );
 }
