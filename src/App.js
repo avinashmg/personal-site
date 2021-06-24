@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "ionicons/dist/ionicons/ionicons";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
