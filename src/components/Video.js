@@ -1,19 +1,23 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 const VideoPlayer = () => {
-  const [data, setData] = useState("http//:localhost:8080/");
+  const [data, setData] = useState(false);
 
   useEffect(() => {
-    axios.get(`http://localhost:8080`).then((res) => {
+    axios.get(`http://194.195.114.27:8080/`).then((res) => {
       setData(res.data);
       console.log(res.data);
     }, []);
   });
-  return (
-    <div className="videoPlayer">
-      <iframe src={data} frameborder="0" allowfullscreen=""></iframe>
-    </div>
-  );
+  if (data !== false) {
+    return (
+      <div id="video" className="videoPlayer">
+        <iframe src={data} frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    );
+  } else {
+    return <div></div>;
+  }
 };
 
 export default VideoPlayer;

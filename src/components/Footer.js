@@ -1,3 +1,6 @@
+import facebook from "../facebook.svg";
+import whatsapp from "../whatsapp.svg";
+import github from "../github.svg";
 const Footer = () => {
   return (
     <footer className="footer-dark">
@@ -24,25 +27,26 @@ const Footer = () => {
                 <a href="#">Avinash M G</a>
               </li>
               <li>
-                <a href="#">avinashmg@technologist.com</a>
+                <a href="mailto:avinashmg@technologist.com">
+                  avinashmg@technologist.com
+                </a>
               </li>
               <li>
-                <a href="#"></a>
+                <a href="https://api.whatsapp.com/send?phone=918714335607">
+                  Contact me on whatsapp
+                </a>
               </li>
             </ul>
           </div>
-          <div className="col item social">
+          <div className="col item footer-social">
             <a href="https://www.facebook.com/avinash.mg.313/">
-              <i className="icon ion-social-facebook"></i>
+              <img src={facebook} />
             </a>
-            <a href="#">
-              <i className="icon ion-social-twitter"></i>
+            <a href="https://api.whatsapp.com/send?phone=918714335607">
+              <img src={whatsapp} />
             </a>
-            <a href="#">
-              <i className="icon ion-social-snapchat"></i>
-            </a>
-            <a href="#">
-              <i className="icon ion-social-instagram"></i>
+            <a href="https://github.com/avinashmg">
+              <img src={github} />
             </a>
           </div>
         </div>
