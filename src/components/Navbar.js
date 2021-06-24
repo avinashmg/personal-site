@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import { ToggleButton } from "react-bootstrap";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <nav className="navbar navbar-dark navbar-expand-md textwhite text-white navigation-clean">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          Avinash M G
-        </a>
+        <a className="navbar-brand">Avinash M G</a>
         <button
           className="navbar-toggler"
           data-bs-target="#navcol-1"

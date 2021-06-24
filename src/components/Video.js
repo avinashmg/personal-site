@@ -12,7 +12,12 @@ const VideoPlayer = () => {
   if (data !== false) {
     return (
       <div id="video" className="videoPlayer">
-        <iframe src={data} frameborder="0" allowfullscreen=""></iframe>
+        <iframe
+          title="Youtube Video"
+          src={data}
+          frameborder="0"
+          allowfullscreen=""
+        ></iframe>
       </div>
     );
   } else {

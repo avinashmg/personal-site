@@ -24,7 +24,7 @@ const Footer = () => {
             <h3>About</h3>
             <ul>
               <li>
-                <a href="#">Avinash M G</a>
+                <a>Avinash M G</a>
               </li>
               <li>
                 <a href="mailto:avinashmg@technologist.com">
