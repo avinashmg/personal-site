@@ -10,6 +10,7 @@ const AboutMe = () => {
           <h2 className="text-center">About Me </h2>
           <p className="text-center">
             <img
+              alt="aboutme"
               src="https://avatars.githubusercontent.com/u/27919534?v=4"
               className="aboutMeImg"
             />

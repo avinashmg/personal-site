@@ -9,20 +9,16 @@ const VideoPlayer = () => {
       console.log(res.data);
     }, []);
   });
-  if (data !== false) {
-    return (
-      <div id="video" className="videoPlayer">
-        <iframe
-          title="Youtube Video"
-          src={data}
-          frameborder="0"
-          allowfullscreen=""
-        ></iframe>
-      </div>
-    );
-  } else {
-    return <div></div>;
-  }
+  return (
+    <div id="video" className="videoPlayer">
+      <iframe
+        title="Youtube Video"
+        src={data}
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+  );
 };
 
 export default VideoPlayer;
